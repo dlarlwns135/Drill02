@@ -1,7 +1,3 @@
-from pico2d import *
-import math
-
-open_canvas()
 
 # fill here
 from pico2d import *
@@ -18,7 +14,7 @@ y = 90
 gak = 0
 d = 0.001
 
-while (1):
+while (True):
     if mode_1 == True:
         if y == 90 and x <800:
             clear_canvas_now()
@@ -61,6 +57,8 @@ while (1):
             y = 90
             mode_1 = True
             mode_2 = False
+
+    #update_canvas()
 
 close_canvas()
 
